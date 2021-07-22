@@ -1,10 +1,10 @@
-interface IUser {
+interface UserInterface {
   name: string;
   age?: number;
   getMessage(): string;
 }
 
-const user: IUser = {
+const user: UserInterface = {
   name: 'Monster',
   age: 40,
   getMessage() {
@@ -12,7 +12,7 @@ const user: IUser = {
   },
 };
 
-const user2: IUser = { 
+const user2: UserInterface = { 
   name: 'Jack',
     getMessage() {
     return 'Hello' + name;
