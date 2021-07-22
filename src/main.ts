@@ -10,13 +10,14 @@ interface UserInterface {
   surname: string;
 }
 
-const popularTags: PopularTag[] = ['dragon', 'coffee'];
 
-const dragonsTag: MaybePopularTag = 'dragon';
+const popularTags: PopularTag[] = ["dragon", "coffee"];
 
-let username: string = 'Alex';
+const dragonsTag: MaybePopularTag = "dragon";
 
-let pageName: string | number = '1';
+let username: string = "Alex";
+
+let pageName: string | number = "1";
 
 let errorMessage: string | null = null;
 
