@@ -2,8 +2,13 @@ let vAny: any = 10;
 let vUnknown: unknown = 10;
 
 let s1: string = vAny;
-let s2: string = vUnknown;
+let s2: string = vUnknown as string;
 
-console.log(vAny.foo());  //  No errors = Start of Problem with Any
+let pageNumber: string = "1";
+let numericPageNumber: number = (pageNumber as unknown) as number;
+//  This is Type Assertion, To change Type, First change it to Unknown then to the Type you want.
 
-console.log(vUnknown.foo());  //  Unknown is a better solution to Any-We have to Convert Type of Unknown to Another Type
+/*
+  Stick to Only to Type of Unknown and Void
+  Ignore usning Any in any case
+*/
