@@ -1,9 +1,8 @@
-// When we Don't Return Anything it's Void
+// With Never, You cannot have a Reachable Endpoint
 var doSomething = function () {
     console.log("doSomething");
 };
-/*
-Any Turns Off TypeScript
-Any is the Start of Bigger problems
-Max 5 Any's for big Projects
-*/ 
+// No Endpoint and the Error goes away
+var doNothing = function () {
+    throw "never";
+};
