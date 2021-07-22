@@ -1,4 +1,7 @@
-const someElememt = document.querySelector(".foo") as HTMLInputElement;
+const someElememt = document.querySelector(".foo");
 
-// Typescript does not See our Markup(HTML)
-console.log('someElememt', someElememt.value)
+// Using Typescript with DOM, just use "as" Operator to say what Type you have
+someElememt.addEventListener('blur', (event) => {
+  const target = event.target as HTMLInputElement;
+  console.log('event', target.value)
+});
