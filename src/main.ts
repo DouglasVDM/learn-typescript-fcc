@@ -1,6 +1,6 @@
 class User {
   firstName: string //  Public by Default, can use Outside Class
-  private lastName: string //  Only use Inside Class
+  protected lastName: string //  Works same as Private,Only use Inside Class
 
   constructor(firstnName: string, lastName: string) {
     this.firstName = firstnName;
@@ -13,4 +13,4 @@ class User {
 }
 
 const user = new User("Monster", "lessons");
-console.log(user.firstName);
+console.log(user.lastName);

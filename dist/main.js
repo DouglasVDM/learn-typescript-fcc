@@ -9,4 +9,4 @@ var User = /** @class */ (function () {
     return User;
 }());
 var user = new User("Monster", "lessons");
-console.log(user.firstName);
+console.log(user.lastName);
