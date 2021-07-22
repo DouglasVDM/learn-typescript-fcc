@@ -1,10 +1,9 @@
-// With Never, You cannot have a Reachable Endpoint
-const doSomething = (): never => {
-  console.log("doSomething")
-}
+let vAny: any = 10;
+let vUnknown: unknown = 10;
 
-// No Endpoint and the Error goes away
-const doNothing = (): never => {
-  throw "never"
-}
+let s1: string = vAny;
+let s2: string = vUnknown;
 
+console.log(vAny.foo());  //  No errors = Start of Problem with Any
+
+console.log(vUnknown.foo());  //  Unknown is a better solution to Any-We have to Convert Type of Unknown to Another Type
