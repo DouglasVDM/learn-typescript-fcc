@@ -1,3 +1,4 @@
+var popularTags = ['dragon', 'coffee'];
 var username = 'Alex';
 var pageName = '1';
 var errorMessage = null;
