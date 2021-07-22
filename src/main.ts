@@ -1,10 +1,16 @@
 class User {
-  firstName: string //  Public by Default, can use Outside Class
-  protected lastName: string //  Works same as Private,Only use Inside Class
+  firstName: string;
+  lastName: string;
+  readonly unchangableName: string; //  Read-only property
 
   constructor(firstnName: string, lastName: string) {
     this.firstName = firstnName;
     this.lastName = lastName;
+    this.unchangableName = firstnName;
+  }
+
+  changeUnchangableName(): void {
+    this.unchangableName = "foo";
   }
 
   getFullname(): string {
