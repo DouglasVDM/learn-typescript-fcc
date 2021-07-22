@@ -1,4 +1,14 @@
-var getFullName = function (name, surname) {
-    return name + " " + surname;
+var user = {
+    name: 'Monster',
+    age: 40,
+    getMessage: function () {
+        return 'Hello' + name;
+    }
 };
-console.log(getFullName('Monster', 'Ball'));
+var user2 = {
+    name: 'Jack',
+    getMessage: function () {
+        return 'Hello' + name;
+    }
+};
+console.log(user.name);
