@@ -1,22 +1,11 @@
 interface UserInterface {
   name: string;
-  age?: number;
-  getMessage(): string;
+  surname: string;
 }
+let username: string = 'Alex';
 
-const user: UserInterface = {
-  name: 'Monster',
-  age: 40,
-  getMessage() {
-    return 'Hello' + name;
-  },
-};
+let pageName: string | number = '1';
 
-const user2: UserInterface = { 
-  name: 'Jack',
-    getMessage() {
-    return 'Hello' + name;
-  },
-};
+let errorMessage: string | null = null;
 
-console.log(user.name)
+let user: UserInterface | null = null;  //  Use Unions with Caution because it can become Unsafe
