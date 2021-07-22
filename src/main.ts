@@ -13,4 +13,4 @@ class User {
 }
 
 const user = new User("Monster", "lessons");
-console.log(user.lastName);
+console.log(user.firstName);
