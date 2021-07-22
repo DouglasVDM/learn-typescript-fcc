@@ -1,6 +1,7 @@
 // Custom Types
 type ID = string;
 type PopularTag = string;
+type MaybePopularTag = PopularTag | null;
 
 // Interfaces
 interface UserInterface {
@@ -10,6 +11,8 @@ interface UserInterface {
 }
 
 const popularTags: PopularTag[] = ['dragon', 'coffee'];
+
+const dragonsTag: MaybePopularTag = 'dragon';
 
 let username: string = 'Alex';
 
