@@ -10,6 +10,6 @@ var StatusEnum;
     StatusEnum["InProgress"] = "inProgress";
     StatusEnum["Done"] = "done";
 })(StatusEnum || (StatusEnum = {}));
-var notStartedStatus = Status.NotStarted;
-notStartedStatus = Status.Done;
-console.log(Status.InProgress); //  Enum used as a Value
+var notStartedStatus = StatusEnum.NotStarted;
+notStartedStatus = StatusEnum.Done;
+console.log(StatusEnum.InProgress); //  Enum used as a Value

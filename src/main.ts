@@ -16,8 +16,8 @@ interface Tack {
   id: string;
   status: StatusEnum; //  Provide only Enum
 }
-let notStartedStatus: Status = Status.NotStarted;
+let notStartedStatus: StatusEnum = StatusEnum.NotStarted;
 
-notStartedStatus = Status.Done;
+notStartedStatus = StatusEnum.Done;
 
-console.log(Status.InProgress); //  Enum used as a Value
+console.log(StatusEnum.InProgress); //  Enum used as a Value
