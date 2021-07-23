@@ -1,4 +1,7 @@
-class User {
+interface UserInterface{
+  getFullname(): string;
+}
+  class User implements UserInterface{
   firstName: string;
   lastName: string;
   readonly unchangableName: string; //  Read-only property
@@ -10,12 +13,12 @@ class User {
   }
 
   changeUnchangableName(): void {
-    this.unchangableName = "foo";
+    // this.unchangableName = "foo";
   }
 
-  getFullname(): string {
-    return this.firstName + " " + this.lastName;
-  }
+  // getFullname(): string {
+  //   return this.firstName + " " + this.lastName;
+  // }
 }
 
 const user = new User("Monster", "lessons");

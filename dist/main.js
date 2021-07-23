@@ -5,7 +5,7 @@ var User = /** @class */ (function () {
         this.unchangableName = firstnName;
     }
     User.prototype.changeUnchangableName = function () {
-        this.unchangableName = "foo";
+        // this.unchangableName = "foo";
     };
     User.prototype.getFullname = function () {
         return this.firstName + " " + this.lastName;
