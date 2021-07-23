@@ -1,44 +1,19 @@
-//<-----Read Data Types Specified in Libraries like Ramda(Functional Programming)----->
-const R = require('ramda');
-import R from 'ramda';
-
-const updateArray = append<string>("bar", ["foo", "bar"]);
-
-const searchStr = "foo";
-const_hasSearchString = any<string>((el: string) => el.contains(searchStr), [
-  "fooooo",
-  "bar",
-  ,
-])
-//<------Read Data Types Specified in Libraries like Ramda(Functional Programming)----->
-
-const addId = <T extends object>(obj: T) => {  //  T is a Generic Type
-  const id = Math.random().toString(16);
-  return {
-    ...obj,
-    id,
-  };
+const statuses = {
+  notStarted: 0,
+  inProgress: 1,
+  done: 2,
 };
 
-//  Generic Interface 
-interface UserInterface<T, V> {
-  name: string;
-  data: T;
-  meta: V;
+console.log(statuses.inProgress);
+
+enum Status {
+  NotStarted = "notStarted",  //  Use = instead of :
+  InProgress = "inProgress",
+  Done = "done",
 }
 
-const user: UserInterface<{ meta: string }, string> = {
-  name: "Jack",
-  data: {
-    meta: "foo",
-  },
-  meta: "bar",
-};
+let notStartedStatus: Status = Status.NotStarted;
 
-const user2: UserInterface<string[]> = {
-  name: "John",
-  data: ["foo", "bar", "baz"],
-}
+notStartedStatus = Status.Done;
 
-const result = addId<UserInterface>(user);
-console.log(`result, ${result}`) 
+console.log(Status.InProgress); //  Enum used as a Value
