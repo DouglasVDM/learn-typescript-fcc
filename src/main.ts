@@ -1,3 +1,16 @@
+//<-----Read Data Types Specified in Libraries like Ramda(Functional Programming)----->
+
+
+const updateArray = append<string>("bar", ["foo", "bar"]);
+
+const searchStr = "foo";
+const_hasSearchString = any<string>((el: string) => el.contains(searchStr), [
+  "fooooo",
+  "bar",
+  ,
+])
+//<------Read Data Types Specified in Libraries like Ramda(Functional Programming)----->
+
 const addId = <T extends object>(obj: T) => {  //  T is a Generic Type
   const id = Math.random().toString(16);
   return {
