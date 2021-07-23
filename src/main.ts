@@ -6,7 +6,7 @@ const statuses = {
 
 console.log(statuses.inProgress);
 
-enum Status {
+enum StatusEnum {
   NotStarted = "notStarted",  //  Use = instead of :
   InProgress = "inProgress",
   Done = "done",
@@ -14,7 +14,7 @@ enum Status {
 
 interface Tack {
   id: string;
-  status: Status; //  Provide only Enum
+  status: StatusEnum; //  Provide only Enum
 }
 let notStartedStatus: Status = Status.NotStarted;
 

@@ -4,12 +4,12 @@ var statuses = {
     done: 2
 };
 console.log(statuses.inProgress);
-var Status;
-(function (Status) {
-    Status["NotStarted"] = "notStarted";
-    Status["InProgress"] = "inProgress";
-    Status["Done"] = "done";
-})(Status || (Status = {}));
+var StatusEnum;
+(function (StatusEnum) {
+    StatusEnum["NotStarted"] = "notStarted";
+    StatusEnum["InProgress"] = "inProgress";
+    StatusEnum["Done"] = "done";
+})(StatusEnum || (StatusEnum = {}));
 var notStartedStatus = Status.NotStarted;
 notStartedStatus = Status.Done;
 console.log(Status.InProgress); //  Enum used as a Value
