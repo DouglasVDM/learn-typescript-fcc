@@ -5,13 +5,24 @@ const addId = <T extends object>(obj: T) => {  //  T is a Generic Type
     id,
   };
 };
-interface UserInterface {
+
+//  Generic Interface 
+interface UserInterface<T> {
   name: string;
+  data: T;
 }
 
-const user: UserInterface = {
-  name: "Jack"
+const user: UserInterface<{ meta: string }> = {
+  name: "Jack",
+  data: {
+    meta: "foo",
+  },
 };
+
+const user2: UserInterface<string[]> = {
+  name: "John",
+  data: ["foo", "bar", "baz"],
+}
 
 const result = addId<UserInterface>(user);
 console.log(`result, ${result}`) 

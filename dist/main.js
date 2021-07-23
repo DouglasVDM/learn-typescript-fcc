@@ -14,7 +14,14 @@ var addId = function (obj) {
     return __assign(__assign({}, obj), { id: id });
 };
 var user = {
-    name: "Jack"
+    name: "Jack",
+    data: {
+        meta: "foo"
+    }
+};
+var user2 = {
+    name: "John",
+    data: ["foo", "bar", "baz"]
 };
 var result = addId(user);
 console.log("result, " + result);
