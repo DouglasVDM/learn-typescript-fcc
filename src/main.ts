@@ -7,16 +7,18 @@ const addId = <T extends object>(obj: T) => {  //  T is a Generic Type
 };
 
 //  Generic Interface 
-interface UserInterface<T> {
+interface UserInterface<T, V> {
   name: string;
   data: T;
+  meta: V;
 }
 
-const user: UserInterface<{ meta: string }> = {
+const user: UserInterface<{ meta: string }, string> = {
   name: "Jack",
   data: {
     meta: "foo",
   },
+  meta: "bar",
 };
 
 const user2: UserInterface<string[]> = {

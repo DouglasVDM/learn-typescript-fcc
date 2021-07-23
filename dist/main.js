@@ -17,7 +17,8 @@ var user = {
     name: "Jack",
     data: {
         meta: "foo"
-    }
+    },
+    meta: "bar"
 };
 var user2 = {
     name: "John",
