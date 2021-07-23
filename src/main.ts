@@ -12,6 +12,10 @@ enum Status {
   Done = "done",
 }
 
+interface Tack {
+  id: string;
+  status: Status; //  Provide only Enum
+}
 let notStartedStatus: Status = Status.NotStarted;
 
 notStartedStatus = Status.Done;
