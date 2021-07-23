@@ -1,4 +1,4 @@
-//<-----Read Data Types Specified in Libraries like Ramda(Functional Programming)----->
+"use strict";
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -10,6 +10,9 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
+exports.__esModule = true;
+//<-----Read Data Types Specified in Libraries like Ramda(Functional Programming)----->
+var R = require('ramda');
 var updateArray = append("bar", ["foo", "bar"]);
 var searchStr = "foo";
 const_hasSearchString = any(function (el) { return el.contains(searchStr); }, [

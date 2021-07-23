@@ -1,5 +1,6 @@
 //<-----Read Data Types Specified in Libraries like Ramda(Functional Programming)----->
-
+const R = require('ramda');
+import R from 'ramda';
 
 const updateArray = append<string>("bar", ["foo", "bar"]);
 
